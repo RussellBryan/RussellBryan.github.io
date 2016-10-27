@@ -13,7 +13,7 @@ window.addEventListener "keydown", (e) ->
 		if imgInd != 0
 			imgInd -= 1
 			imgs[imgInd + 1].style.borderColor = "black"
-	imgSrc = imgs[imgInd].src.split("Eng/")[1]
+	imgSrc = imgs[imgInd].src.split("static")[1]
 	imgs[imgInd].style.borderColor = "darkred"
-	container.style.background = "url(" + imgSrc + ") no-repeat center center fixed"
+	container.style.background = "url(static" + imgSrc + ") no-repeat center center fixed"
 	container.style.backgroundSize = "cover"

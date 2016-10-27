@@ -12,21 +12,21 @@ window.addEventListener("keydown", function(e) {
   if (e.keyCode === 38 || 40) {
     e.preventDefault();
   }
-  if (e.keyCode === 40) {
+  if (event.keyCode === 40) {
     if (imgInd < imgs.length - 1) {
       imgInd += 1;
       imgs[imgInd - 1].style.borderColor = "black";
     }
   }
-  if (e.keyCode === 38) {
+  if (event.keyCode === 38) {
     console.log(imgInd);
     if (imgInd !== 0) {
       imgInd -= 1;
       imgs[imgInd + 1].style.borderColor = "black";
     }
   }
-  imgSrc = imgs[imgInd].src.split("Eng/")[1];
+  imgSrc = imgs[imgInd].src.split("static")[1];
   imgs[imgInd].style.borderColor = "darkred";
-  container.style.background = "url(" + imgSrc + ") no-repeat center center fixed";
+  container.style.background = "url(static" + imgSrc + ") no-repeat center center fixed";
   return container.style.backgroundSize = "cover";
 });
