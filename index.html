@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html ng-app="cocktailApp">
+	<head>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+		<script type="text/javascript" src="ingredients.js"></script>
+		<script type="text/javascript" src="cocktails.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel='stylesheet' type='text/css' href='style.css'>
+		<title>AngularCocktails</title>
+	</head>
+	<div class=header style="font-size: 35px;">
+		<a href="front-page.html">
+			<span style='color:darkred;'>
+				KitchEn<span style='color:darkblue'>g</span>
+			</span>
+		</a>
+	</div>
+	<div class="container-fluid" style="background: url('static/cocktail') no-repeat center -50px fixed; background-size: cover;"
+	<h1 style="text-align: center; padding-top: 60px;">Cocktail Calculator With AngularJS</h1>
+	<div class=calculator ng-controller="FormController as formCtrl" style="width: 50%; margin: auto; color: white; padding: 50px">
+	<form>
+		<h3>Spirits</h3>
+		<label>
+			Number of Spirits
+			<select ng-model="formCtrl.numSpirits" ng-options="i for i in [1, 2, 3]" ng-change='formCtrl.updateSpirits(formCtrl)'></select>
+		</label>
+		
+		<table class='table'>
+			<tr ng-repeat='spirit in formCtrl.range(formCtrl.numSpirits) track by $index'>
+				<td>ABV</td>
+				<td><input type='number' ng-model='formCtrl.spiritABV[$index]'></input></td>
+				<td>Amount</td>
+				<td><input type='number' ng-model='formCtrl.spiritAmount[$index]'></input></td>
+			</tr>
+		</table>
+
+		<h3>Ingredients</h3>
+		<label>Number of Ingredients
+			<select ng-model="formCtrl.numIngredients" ng-options="i for i in [1, 2, 3, 4, 5]" ng-change="formCtrl.updateIngredients(formCtrl)">
+			</select>
+		</label>
+
+		<table class=table>
+			<tr ng-repeat='ingredient in formCtrl.range(formCtrl.numIngredients) track by $index'>
+				<td>Type</td>
+				<td>
+					<select ng-model="formCtrl.ingredientType[$index]" ng-options="t for (t, ings) in formCtrl.ingredientData">
+					</select>
+				</td>
+				<td>Ingredient</td>
+				<td>
+					<select ng-model="formCtrl.ingredient[$index]" ng-options='i for (i, p) in formCtrl.ingredientType[$index]'>
+					</select>
+				</td>
+				<td>Amount</td>
+				<td><input type='number' ng-model="formCtrl.ingredientAmount[$index]"></input></td>
+			</tr>
+		</table>
+
+		<h3>Dilution Method</h3>
+		<label class='radio-inline'>
+			<input name="dilution" type='radio' ng-model="formCtrl.dilution" value='stirred'>
+			Stirred
+		</label>
+		<label class='radio-inline'>
+			<input name="dilution" type='radio' ng-model="formCtrl.dilution" value='shaken'>
+			Shaken
+		</label>
+		<label class='radio-inline'>
+			<input name="dilution" type='radio' ng-model="formCtrl.dilution" value='none'>
+			None
+		</label>
+	</form>
+
+	<h3>Calculated Cocktail</h3>
+	<table class='table'>
+		<tr>
+			<td>ABV</td>
+			<td>Sugar</td>
+			<td>Acid</td>
+			<td>Mix Volume</td>
+			<td>Final Volume</td>
+		</tr>
+		<tr>
+			<td>{{formCtrl.calculate(formCtrl).ABV | number}}</td>
+			<td>{{formCtrl.calculate(formCtrl).Sugar | number}}</td>
+			<td>{{formCtrl.calculate(formCtrl).Acid | number}}</td>
+			<td>{{formCtrl.calculate(formCtrl).mixVolume | number}}</td>
+			<td>{{formCtrl.calculate(formCtrl).finalVolume | number}}</td>
+		</tr>
+	</table>
+  </div>
+</div>
+</html>
+

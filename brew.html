@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel='stylesheet' type='text/css' href='style.css'>
+		<title>KitchEng</title>
+	</head>
+	<!Background Image>
+	<div class=header>
+		<a href="front-page.html" style="font-size: 35px">
+			<span style='color:darkred;'>KitchEn<!--
+			--><span style='color:darkblue'>g</span>
+			</span>
+		</a>
+	</div>
+	<div class="container-fluid" style="background: url(static/HERMS.jpg) no-repeat center center fixed; background-size: cover;">
+		<div class="col-md-1" style="padding-top: 52px; padding-left: 0px; position: fixed;">
+				<!Images Here>
+				<img src="static/HERMS.jpg" style="border-color: darkred;">
+				<img src="static/circulator.jpg">
+				<img src="static/relay.jpg">
+				<img src="static/tun.jpg">
+		</div>
+		<div class="row" style="padding: 180px; text-align: center; font-size: 100px; color: darkred; opacity: .7;">
+			HERMS Brewing System
+		</div>
+		<div class="col-md-7"></div>
+		<div class="col-md-4" style="background: rgba(143, 0, 0, .7); margin-bottom: 60px;">
+			<!Pragraphs Here>
+				<p>
+				    I love to brew beer, and I recently set up a HERMS brewing system and started brewing from grain rather than malt extract syrup. 
+				</p>
+				<p>
+				    The first step in brewing, called mashing, is to add water to crushed malted barley and hold at a specified temperature so that enzymes can convert the starches into fermentable sugars. The timing and temperature of the mash heavily influences the activity of the enzymes and thus the taste of the beer. Most home brewers dump hot water and crushed malted barely into a cooler, close the lid, and then adjust the temperature by adding hot water if it falls too much. This works fine, and a careful home brewer can maintain a temperature within 1 &deg; Celsius of their target, if they are very attentive. Since I already had a circulator, when I set up my system, I opted to use it to maintain temperature and thus give me much more control over the mashing process. 
+				</p>
+				<p>
+					This is it. There is a lot going on here so I'll break it down piece by piece.
+				</p>
+				<p>
+					First off, this is my circulator. It consists of a plastic tub, relay, aquarium pump (admittedly not the best solution, but definitely the cheapest), and a micro-controller. Not the prettiest thing in the world, but all told it cost about $80 so I'm not complaining. A friend recently asked me to help him put one of these together. This friend also owns a 3-D printer so my circulator is soon to get a makeover. Stay tuned as this circulator might soon get its own page.
+				</p>
+				<p>
+				    This is the relay. Its simply a junction box with an outlet and a solid state relay inside. The relay allows me to connect a micro-controller and turn the power to the outlet on or off. 
+				</p>
+				<p>
+					The final component is the micro-controller. This is a Particle Photon with some connectors for temperature sensors and relays. A Photon is like an Arduino except smaller and it comes with a wifi interface that allows you to wireless send and receive information. For those of you who don't know what either, an Arduino or a Photon is, it simply a device that allows me to easily interface sensors with my computer and control external devices. In this case, I'm using a relay to turn on and off the power to the heating element. 
+				</p>
+				<p>
+					Next we have the mash tun. Its simply a 24 quart cooler with a copper manifold at the bottom to ac as a drain. This keeps the grain warm as the enzymes go to work converting the starches in malted barley into fermentable sugars. For most home brewers, this is all that is used to accomplish this task. Hot water and grain are added to the mash tun and the temperature is manually monitored. If it drops too low, hot water is added.
+				</p>
+				<p>
+					The final component is 20 feet of 1/4 inch copper submerged in my circulator, and a small pump to run the wort through it. Doing this allows for much better temperature stability while mashing and thus gives me much more control over the brewing process. I have thus far only brewed 2 batches with this system. Both of which were single temperature infusions, meaning I held the grains at one temperature for the whole time while mashing. Where these systems really shine is in their ability to increase the temperature during mashing. Doing this allows the brewer to control how long each of the enzymes at work in the mashing process is active. Each enzyme converts starches into different sugars and gives a different by-product, thus controlling the time and temperature during mashing allows for more control over the final character of the beer. 
+				</p>
+		</div>
+	</div>
+	<script type="text/javascript" src="picSwitch.js"></script>
+</html>

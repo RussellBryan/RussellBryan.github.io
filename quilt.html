@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel='stylesheet' type='text/css' href='style.css'>
+		<title>KitchEng</title>
+	</head>
+	<!Background Image>
+	<div class=header>
+		<a href="front-page.html" style="font-size: 35px">
+			<span style='color:darkred;'>KitchEn<!--
+			--><span style='color:darkblue'>g</span>
+			</span>
+		</a>
+	</div>
+	<div class="container-fluid" style="background: url(static/quilt.jpg) no-repeat center -40px fixed; background-size: cover;">
+		<div class="col-md-1" style="padding-top: 52px; padding-left: 0px; position: fixed;">
+				<!Images Here>
+				<img src="static/quilt.jpg" style="border-color: darkred;">
+				<img src="static/quilt_scale.jpg">
+		</div>
+		<div class="row" style="padding: 100px; text-align: center; font-size: 100px; color: darkred; opacity: .7;">
+			Down Backpacking Quilt
+		</div>
+		<div class="col-md-7"></div>
+		<div class="col-md-4" style="background: rgba(143, 0, 0, .7); margin-bottom: 60px;">
+			<!Pragraphs Here>
+			<p>
+				After being inspired by an <a href='http://www.nytimes.com/2015/07/19/business/learning-to-engineer-a-better-brisket.html?_r=0'>article</a> about a Harvard Engineering class in which the student built the best possible smoker they could for less than $1200, I thought I would take a crack at it with things I already had lying around. 
+			</p>
+			<p>
+				This is what I came up with. Two terracotta pots, a round metal grill, and an electric charcoal lighter controlled by an Arduino with a solid-state relay and a thermocouple. 
+			</p>
+			<p> 
+				Sadly, I was not able to achieve thermal stability with this set-up. I was controlling airflow with dirt around the opening at the bottom and I was hoping that I could find the right level of airflow that would allow the the charcoal and wood chips to burn while the electric heater maintained the temperature. This proved to be impossible, the charcoal wanted to either be lit or not lit. It became clear that the charcoal electric hybrid approach was not going to be effective and more precise control of air flow was necessary. Stay tuned, my next attempted will incorporate a fan to control air flow and a much better seal to keep moisture in. All told, it still made for some tasty, though a bit dry, smoked pork shoulder. 
+			</p>
+		</div>
+	</div>
+	<script type="text/javascript" src="picSwitch.js"></script>
+</html>

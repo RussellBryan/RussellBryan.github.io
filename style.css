@@ -1,0 +1,12 @@
+.header					{ position: fixed; background: white; margin: 0px; width: 100%; height: 50px;
+	text-align: center;	overflow: auto; z-index: 1;}
+.container-fluid        {padding-left: 0px}
+.container-fluid p 		{ width: 100%; float: right; color: white; font-size: 18;}
+.container-fluid img 	{ width: 150px; border: 4px solid black;}
+
+.pageColumn     		{ width: 25%; float: left;}
+.pageColumn img:hover  	{ opacity: .5;}
+.pageColumn h2			{ margin-bottom: 0px; color: darkred; margin-top:50px; text-align: center;
+	 padding-bottom: 0px; border-top: 2px solid black; border-bottom: 2px solid black; }
+.imgLink h3 {position: absolute; bottom: -10px; color: darkred; background: grey; padding: 3px; opacity: .8;}
+.imgLink {position: relative;}
