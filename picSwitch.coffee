@@ -9,7 +9,6 @@ window.addEventListener "keydown", (e) ->
 		   imgInd += 1
 		   imgs[imgInd - 1].style.borderColor = "black"
 	if e.keyCode == 38
-		console.log(imgInd)
 		if imgInd != 0
 			imgInd -= 1
 			imgs[imgInd + 1].style.borderColor = "black"

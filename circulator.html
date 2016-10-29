@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel='stylesheet' type='text/css' href='style.css'>
+		<title>KitchEng</title>
+	</head>
+	<!Background Image>
+	<div class=header>
+		<a href="index.html" style="font-size: 35px">
+			<span style='color:darkred;'>KitchEn<!--
+			--><span style='color:darkblue'>g</span>
+			</span>
+		</a>
+	</div>
+	<div class="container-fluid" style="background: url(static/circulator.jpg) no-repeat center -40px fixed; background-size: cover;">
+		<div class="col-md-1" style="padding-top: 52px; padding-left: 0px; position: fixed;">
+				<!Images Here>
+				<img src="static/circulator.jpg" style="border-color: darkred;">
+				<img src="static/relay_photon.jpg">
+		</div>
+		<div class="row" style="padding: 100px; text-align: center; font-size: 100px; color: darkred; opacity: .7;">
+			Thermo-Circulator
+		</div>
+		<div class="col-md-7"></div>
+		<div class="col-md-4" style="background: rgba(143, 0, 0, .7); margin-bottom: 60px;">
+			<!Pragraphs Here>
+			<h3>Whats Going On Here?</h3>
+			<p>
+				This is my thermo-circulator, used for sous vide cooking. I built it in the summer of 2015 and recently added a Particle Photon so it can be controlled from my phone. 
+			</p>
+			<p>
+				The design is very simple (and pretty cheap). A cambro, immersion heater and, aquarium pump (admitedly not the best solution, but for $8 I'm not complaining). To control it, I set up a GFCI outlet in a junction box with a relay and hooked everything up to a Particle Photon with a digital temperature probe. I wrote my own PID control code and after some tuning, I was able to hold temperature as acurately as I could measure it, about .1&deg Celsius. The outlet is not entirely nescesarry, but I wanted to have a device that could control other things as well. All told everything costs about $100 including the Cambro. 
+			</p>
+			<h3>Future Plans/Improvements</h3>
+			<p>
+				I'm very happy with how this works. I may write some code that makes it easier and prettier to control with my phone. I may also build a mount that allows me to use any container. However, many circulators have hit the market in the last two years and now go for $150. I may break down and buy one instead of improving this one. 
+			</p>
+		</div>
+	</div>
+	<script type="text/javascript" src="picSwitch.js"></script>
+</html>
