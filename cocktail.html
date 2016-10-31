@@ -17,7 +17,12 @@
 	</div>
 	<div class="container-fluid" style="background: url('static/cocktail') no-repeat center -50px fixed; background-size: cover;"
 	<h1 style="text-align: center; padding-top: 60px;">Cocktail Calculator With AngularJS</h1>
-	<div class=calculator ng-controller="FormController as formCtrl" style="width: 50%; margin: auto; color: white; padding: 50px">
+	<div class="col-md-3" <div class="col-md-4" style="background: rgba(143, 0, 0, .7); margin-bottom: 60px; margin-top: 80px;">>
+		<p>
+			I put this together mostly as a coding excersize. It uses the data from Dave Arnold's book <a href="https://www.amazon.com/Liquid-Intelligence-Science-Perfect-Cocktail/dp/0393089037/ref=sr_1_1?ie=UTF8&qid=1477862915&sr=8-1&keywords=liquid+intelligence">Liquid Intellegence</a> to calculate the alcohol, sugar, and acid content of a cocktail given its ingredients and dilution method. 
+		</p>
+	</div>
+	<div class="col-md-6" ng-controller="FormController as formCtrl" style="width: 50%; margin: auto; color: white; padding: 50px">
 	<form>
 		<h3>Spirits</h3>
 		<label>
