@@ -14,22 +14,27 @@
 			</span>
 		</a>
 	</div>
-	<div class="container-fluid" style="background: url(static/HERMS.jpg) no-repeat center center fixed; background-size: cover;">
-		<div class="col-md-1" style="padding-top: 52px; padding-left: 0px; position: fixed;">
+	<div class="container-fluid" style="background: url(static/HERMS.jpg) no-repeat center center fixed; background-size: cover; padding-top: 50px;">
+		<div class="row">
+		<div class="col-xs-1" style="position: fixed;">
 				<!Images Here>
-				<img src="static/HERMS.jpg" style="border-color: darkred;">
-				<img src="static/tun.jpg">
+				<a href="#" onclick="imgSwitch(0)">
+					<img src="static/HERMS.jpg" style="border-color: darkred;">
+				</a>
+				<a href="#" onclick="imgSwitch(1)">
+					<img src="static/tun.jpg">
+				</a>
 		</div>
-		<div class="col-md-1" style="padding-top: 90px; padding-left: 160px; color: darkred; line-height: 14px">
+		<div class="col-xs-1" style="padding-top: 40px; padding-left: 175px; color: darkred; line-height: 14px">
 			&uarr;<br><br>&darr;
 		</div>
-		<div class="row" style="padding: 180px; text-align: center; font-size: 100px; color: darkred; opacity: .7;">
+		<div class="col-xs-10" style="text-align: center; padding-top:100px; font-size: 100px; color: darkred; opacity: .7;">
 			HERMS Brewing System
 		</div>
-		<div class="col-md-7"></div>
-		<div class="col-md-4" style="background: rgba(143, 0, 0, .7); margin-bottom: 60px;">
+		<div class="col-xs-7"></div>
+		<div class="col-xs-4" style="background: rgba(143, 0, 0, .7); margin-bottom: 60px; margin-top: 200px;">
 			<!Pragraphs Here>
-				<h3>Whats Going Here?</h3>
+			<h3>Whats Going Here?</h3>
 				<p>
 				    I love to brew beer, and as I was looking into setting up an all grain brewing system, I realized I could easily put together a temperature controlled recirculated mash system. 
 				</p>
@@ -49,7 +54,8 @@
 				<p>
 					I was ultimately quite happy with the result from this set up. I did loose 1/2 a degree Celsius in 90 minutes of mashing. My circulator did not have quite enough power to maintain temperature. I expected this as I was trying to hold roughly 9 gallons of water at around 60 &deg C with 1200 Watts. I plan to eventually put together a system that has plenty of power to even step up temperature during the mashing process. I have a few ideas on how to do this, I may try regulating a propane valve with a servo, or I may due away with the heat exchanger and heat the mash liquid directly. For now a quick fix is the modify the geometry of my circulator and heat exchanger in order to ultimately use less water. 
 				</p>
-				</p>
+		</div>
 	</div>
+</div>
 	<script type="text/javascript" src="picSwitch.js"></script>
 </html>

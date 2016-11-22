@@ -14,21 +14,26 @@
 			</span>
 		</a>
 	</div>
-	<div class="container-fluid" style="background: url(static/smoker.jpg) no-repeat center -40px fixed; background-size: cover;">
-		<div class="col-md-1" style="padding-top: 52px; padding-left: 0px; position: fixed;">
+	<div class="container-fluid" style="background: url(static/smoker.jpg) no-repeat center center fixed; background-size: cover; padding-top: 50px;">
+		<div class="row">
+		<div class="col-xs-1" style="position: fixed;">
 				<!Images Here>
-				<img src="static/smoker.jpg" style="border-color: darkred;">
-				<img src="static/smoke.jpg">
+				<a href="#" onclick="imgSwitch(0)">
+					<img src="static/smoker.jpg" style="border-color: darkred;">
+				</a>
+				<a href="#" onclick="imgSwitch(1)">
+					<img src="static/smoke.jpg">
+				</a>
 		</div>
-		<div class="col-md-1" style="padding-top: 90px; padding-left: 160px; color: darkred; line-height: 14px">
+		<div class="col-xs-1" style="padding-top: 40px; padding-left: 175px; color: darkred; line-height: 14px">
 			&uarr;<br><br>&darr;
 		</div>
-		<div class="row" style="padding: 100px; text-align: center; font-size: 100px; color: darkred; opacity: .7;">
+		<div class="col-xs-10" style="text-align: center; padding-top:100px; font-size: 100px; color: darkred; opacity: .7;">
 			DIY Smoker
 		</div>
-		<div class="col-md-7"></div>
-		<div class="col-md-4" style="background: rgba(143, 0, 0, .7); margin-bottom: 60px;">
-			<!Pragraphs Here>
+		<div class="col-xs-7"></div>
+		<div class="col-xs-4" style="background: rgba(143, 0, 0, .7); margin-bottom: 60px; margin-top: 200px;">
+		<!Pragraphs Here>
 			<p>
 				After being inspired by an <a href='http://www.nytimes.com/2015/07/19/business/learning-to-engineer-a-better-brisket.html?_r=0'>article</a> about a Harvard Engineering class in which the student built the best possible smoker they could for less than $1200, I thought I would take a crack at it with things I already had lying around. 
 			</p>
@@ -40,5 +45,6 @@
 			</p>
 		</div>
 	</div>
+</div>
 	<script type="text/javascript" src="picSwitch.js"></script>
 </html>

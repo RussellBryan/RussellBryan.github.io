@@ -14,22 +14,27 @@
 			</span>
 		</a>
 	</div>
-	<div class="container-fluid" style="background: url(static/circulator.jpg) no-repeat center -40px fixed; background-size: cover;">
-		<div class="col-md-1" style="padding-top: 52px; padding-left: 0px; position: fixed;">
+	<div class="container-fluid" style="background: url(static/circulator.jpg) no-repeat center center fixed; background-size: cover; padding-top: 50px;">
+		<div class="row">
+		<div class="col-xs-1" style="position: fixed;">
 				<!Images Here>
-				<img src="static/circulator.jpg" style="border-color: darkred;">
-				<img src="static/relay_photon.jpg">
+				<a href="#" onclick="imgSwitch(0)">
+					<img src="static/circulator.jpg" style="border-color: darkred;">
+				</a>
+				<a href="#" onclick="imgSwitch(1)">
+					<img src="static/relay_photon.jpg">
+				</a>
 		</div>
-		<div class="col-md-1" style="padding-top: 90px; padding-left: 160px; color: darkred; line-height: 14px">
+		<div class="col-xs-1" style="padding-top: 40px; padding-left: 175px; color: darkred; line-height: 14px">
 			&uarr;<br><br>&darr;
 		</div>
-		<div class="row" style="padding: 100px; text-align: center; font-size: 100px; color: darkred; opacity: .7;">
+		<div class="col-xs-10" style="text-align: center; padding-top:100px; font-size: 100px; color: darkred; opacity: .7;">
 			Thermo-Circulator
 		</div>
-		<div class="col-md-7"></div>
-		<div class="col-md-4" style="background: rgba(143, 0, 0, .7); margin-bottom: 60px;">
-			<!Pragraphs Here>
-			<h3>Whats Going On Here?</h3>
+		<div class="col-xs-7"></div>
+		<div class="col-xs-4" style="background: rgba(143, 0, 0, .7); margin-bottom: 60px; margin-top: 200px;">
+		<!Pragraphs Here>
+					<h3>Whats Going On Here?</h3>
 			<p>
 				This is my thermo-circulator, used for sous vide cooking. I built it in the summer of 2015 and recently added a Particle Photon so it can be controlled from my phone. 
 			</p>
@@ -42,5 +47,6 @@
 			</p>
 		</div>
 	</div>
+</div>
 	<script type="text/javascript" src="picSwitch.js"></script>
 </html>
